@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata Mosquito</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="ajustaTela()">
+
+    <div class="painel">
+        <div class="vida">
+            <img id="v1" src="imgs/coracao_cheio.png">
+            <img id="v2" src="imgs/coracao_cheio.png">
+            <img id="v3" src="imgs/coracao_cheio.png">
+        </div>
+
+        <div class="cronometro">
+            Tempo Restante: <span id="cronometro"></span>
+        </div>
+    </div>
+
+    <script>
+        setInterval(function(){
+            cria()
+        }, dificuldade())
+    </script>
+</body>
+</html>
